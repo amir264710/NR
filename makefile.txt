@@ -1,0 +1,16 @@
+# Makefile function to run the Python code
+define run_python_code
+    @echo "Running Python code: $@"
+	python main.py
+    @echo "Python code execution complete"
+endef
+
+# Target to run the Python code
+run_python:
+    $(call run_python_code)
+
+# Target to clean up generated files
+clean:
+    rm -f modelDenoised.wav
+
+.PHONY: run_python clean

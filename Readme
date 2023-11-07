@@ -1,0 +1,2 @@
+this use brainspeech lib to enhance voice
+most be run on nvidia gpu (T4 for colab)

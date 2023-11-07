@@ -1,0 +1,5 @@
+speechbrain
+torchaudio
+librosa
+numpy
+pydub
