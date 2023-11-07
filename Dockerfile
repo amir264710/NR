@@ -1,8 +1,10 @@
 FROM python:3.10
 
-COPY requirements.txt .
+COPY requirements.txt /tmp
 
-WORKDIR /NR
+WORKDIR /tmp
+
+RUN pip install -r requirements.txt
 
 ADD main.py .
 
